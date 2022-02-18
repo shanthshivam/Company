@@ -1,0 +1,33 @@
+﻿@page "/binding"
+<h3>Binding</h3>
+<br />
+<div>
+    <label class="justify-content-center">One Way Binding</label>
+    <br />
+    <b>Name :</b> <input value="@Name" />
+    <p></p>
+    <b>Name does not Change:</b> @Name
+
+</div>
+
+<br />
+<div>
+    <label class="justify-content-center">Two Way Binding</label>
+    <br />
+    <b>Name :</b> <input @bind="NameChange" @bind:event="oninput" />
+    <p></p>
+    <b>Name Changes:</b> @NameChange
+
+</div>
+<br />
+<div>
+    <br />
+    Count : @NameChange.Length
+</div>
+
+
+@code {
+    public string NameChange { get; set; } = string.Empty;
+    public string Name { get; set; } = "Shanth";
+
+}
