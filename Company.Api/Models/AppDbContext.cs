@@ -41,46 +41,46 @@ namespace Company.Api.Models
             modelBuilder.Entity<Employee>().HasData(new Employee
             {
                 EmployeeId = 1,
-                FirstName = "John",
-                LastName = "Hastings",
-                Email = "David@pragimtech.com",
-                DateOfBrith = new DateTime(1980, 10, 5),
+                FirstName = "Ravi",
+                LastName = "Kumar",
+                Email = "Ravi.kumar@company.com,
+                DateOfBrith = new DateTime(1999, 10, 5),
                 Gender = Gender.Male,
                 DepartmentId = 1,
-                PhotoPath = "images/john.png"
+                PhotoPath = "images/ravi.png"
             });
 
             modelBuilder.Entity<Employee>().HasData(new Employee
             {
                 EmployeeId = 2,
-                FirstName = "Sam",
-                LastName = "Galloway",
-                Email = "Sam@pragimtech.com",
-                DateOfBrith = new DateTime(1981, 12, 22),
+                FirstName = "Sid",
+                LastName = "Kumar",
+                Email = "Sid.kumar@company.com",
+                DateOfBrith = new DateTime(2001, 12, 12),
                 Gender = Gender.Male,
                 DepartmentId = 2,
-                PhotoPath = "images/sam.jpg"
+                PhotoPath = "images/sid.jpg"
             });
 
             modelBuilder.Entity<Employee>().HasData(new Employee
             {
                 EmployeeId = 3,
-                FirstName = "Mary",
-                LastName = "Smith",
-                Email = "mary@pragimtech.com",
-                DateOfBrith = new DateTime(1979, 11, 11),
+                FirstName = "Rupa",
+                LastName = "Shree",
+                Email = "rupa.shree@company.com",
+                DateOfBrith = new DateTime(2000, 11, 14),
                 Gender = Gender.Female,
                 DepartmentId = 1,
-                PhotoPath = "images/mary.png"
+                PhotoPath = "images/rupa.png"
             });
 
             modelBuilder.Entity<Employee>().HasData(new Employee
             {
                 EmployeeId = 4,
                 FirstName = "Sara",
-                LastName = "Longway",
-                Email = "sara@pragimtech.com",
-                DateOfBrith = new DateTime(1982, 9, 23),
+                LastName = "Grover",
+                Email = "sara.grover@company.com",
+                DateOfBrith = new DateTime(2002, 9, 12),
                 Gender = Gender.Female,
                 DepartmentId = 3,
                 PhotoPath = "images/sara.png"
