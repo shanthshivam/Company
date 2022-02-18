@@ -9,8 +9,8 @@ namespace Company.Api.Models
         public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options)
         {
-        }
 
+        }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Department> Departments { get; set; }
 
@@ -43,7 +43,7 @@ namespace Company.Api.Models
                 EmployeeId = 1,
                 FirstName = "Ravi",
                 LastName = "Kumar",
-                Email = "Ravi.kumar@company.com,
+                Email = "Ravi.kumar@company.com",
                 DateOfBrith = new DateTime(1999, 10, 5),
                 Gender = Gender.Male,
                 DepartmentId = 1,
